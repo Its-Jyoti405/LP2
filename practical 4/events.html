@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event List | Event Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Upcoming Events</h1></header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Events</a>
+    <a href="#">Register</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search event..." onkeyup="filterEvents()">
+      
+      <select id="categoryFilter" onchange="filterEvents()">
+        <option value="All">All Categories</option>
+        <option value="Tech">Tech</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Cultural">Cultural</option>
+      </select>
+    </div>
+
+    <div id="eventList" class="event-list"></div>
+  </div>
+
+  <footer>&copy; 2025 Event Organization</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
